@@ -160,14 +160,15 @@ class ColorPoint(Point):
         self._color = color
 
 #Q8
-    def __init__(self, x=0, y=0):
-        self._x = x
-        self._y = y
+    class Point:
+        def __init__(self, x=0, y=0):
+            self._x = x
+            self._y = y
 
-    @classmethod
-    def from_string(cls, s):
-        x_str, y_str = s.split(",")
-        return cls(int(x_str), int(y_str))
+        @classmethod
+        def from_string(cls, s):
+            x_str, y_str = s.split(",")
+            return cls(int(x_str), int(y_str))
 
 #Q9
 import numpy as np
